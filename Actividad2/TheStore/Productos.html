@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheStore</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<header>
+  <nav class="nav-wrapper">
+    <img src="./img/lg.jpg" alt="" width="100px" class="img-logo">
+    <a href="#" class="brand-logo">The Store</a>
+    <a href="#" class="sidenav-trigger" data-target="mobile-links">
+      <i class="material-icons">menu</i>
+    </a>
+    <ul class="right hide-on-med-and-down">        
+      <li class="active"><a href="./Productos.html"><i class="material-icons">home</i>Products</a></li>
+      <li><a href="./Car.html"><i class="material-icons">shopping_cart</i>Car</a></li>
+      <li><a href="./Login.html"><i class="material-icons">person_pin</i>Login</a></li>
+      <li><a href="./NewProduct.html"><i class="material-icons">add_shopping_cart</i>New Product</a></li>
+    </ul>
+  </nav>
+  <ul class="sidenav" id="mobile-links">
+    <li class="active"><a href="./Productos.html" class="color-text">Products</a></li>
+    <li><a href="./Car.html" class="color-text">Car</a></li>
+    <li><a href="./Login.html" class="color-text">Login</a></li>
+    <li><a href="./NewProduct.html" class="color-text">New Products</a></li>
+  </ul> 
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.js">
+  </script>
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+  </script>
+</header>
+<body>
+  <div class="row">
+    <div class="col s12 m6 l4">
+      <div class="card">
+        <h3 class="card-title">Portátil HP 15" - eh0011la.</h3>
+        <div class="card-image">
+          <img src="./img/HP1.png">
+        </div>
+        <div class="card-content">
+          <p>TAMAÑO DE PANTALLA 15"
+            COLOR Cubierta de aluminio de color negro, base de color negro y marco de teclado de aluminio de color negro
+          </p>
+        </div>
+        <div class="val-product">
+          <label for="precio">Precio</label>
+          <input type="texto" name="precio" id="precio" value="$ 1.750.000">
+        </div>
+        <div class="btn-add">
+          <a class="btn-floating halfway-fab waves-effect waves-light red" href="./PortailHP1.html"><i class="material-icons">add</i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l4">
+      <div class="card">
+        <h3 class="card-title">Portátil HP 15.6 - eh0022la</h3>
+        <div class="card-image">
+          <img src="./img/HP2.png">
+        </div>
+        <div class="card-content">
+          <p>TAMAÑO DE PANTALLA 15.6"
+            COLOR Cubierta de aluminio de color Azul, base de color Azul y marco de teclado de aluminio de color Azul</p>
+        </div>
+        <div class="val-product">
+          <label for="precio">Precio</label>
+          <input type="texto" name="precio" value="$ 2.150.000">
+        </div>
+        <div class="btn-add">
+          <a class="btn-floating halfway-fab waves-effect waves-light red" href="./PortailHP1.html"><i class="material-icons">add</i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l4">
+      <div class="card">
+        <h3 class="card-title">Portátil HP Pavilion Gaming 15-dk1506la</h3>
+        <div class="card-image">
+          <img src="./img/HP3.png">
+        </div>
+        <div class="card-content">
+          <p>TAMAÑO DE PANTALLA 15.6"
+            COLOR Cubierta de aluminio de color verde, base de color negro y marco de teclado de aluminio de color negro</p>
+        </div>
+        <div class="val-product">
+          <label for="precio">Precio</label>
+          <input type="texto" name="precio" id="precio" value="$ 2.750.000">
+        </div>
+        <div class="btn-add">
+          <a class="btn-floating halfway-fab waves-effect waves-light red" href="./PortailHP1.html"><i class="material-icons">add</i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Store</title>
+    <link rel="stylesheet" href="./css/style.css">  
+        <!-- Iconos con boton-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<header>
+    <nav>
+        <img src="./img/lg.jpg" alt="Logo" class="img-logo">
+        <ul>
+            <li>
+                <a href="./TheStore.html" >The Store</a>
+            </li>
+            <li>
+                <a href="./car.html">Car</a>
+            </li>
+            <li>
+                <a href="./login.html">Login</a>
+            </li>
+            <li>
+                <a href="./NewProduct.html" class="active">New Product</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<body>
+  <center>
+    <div class="container">
+        <form name="form_prod">
+         <div class="row">      
+            <img src="./img/lg.jpg" alt="Logo" class="img-logo">
+         </div> 
+        <div class="row">
+          <div class="col-25">
+            <label for="product_name">Nombre del Producto</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="product_name" name="product_name" placeholder="Name of prod..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="product_price">Precio del producto</label>
+          </div>
+          <div class="col-75">
+            <input type="number" min="1" id="product_price" name="product_price" placeholder="Price of prod..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="product_inventory">Cantidad</label>
+          </div>
+          <div class="col-75">
+            <input type="number" min="1" id="product_inventory" name="product_inventory" placeholder="Quantity of prod..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="country">Origen</label>
+          </div>
+          <div class="col-75">
+            <select id="country" name="country">
+              <option value="Colombia">Colombia</option>
+              <option value="China">China</option>
+              <option value="USA">USA</option>
+            </select>
+          </div>
+        </div>
+        <div class="row-button">
+            <input type="button" value="Create Product" onclick="sub();" name="CreateProduct" id="CreateProduct">       
+        </div>
+                 <!-- Script que muestra la información del formulario  -->
+                 <script src="./js/newproduct.js"></script>
+        </form>
+      </div>
+     </center> 
+</body>
+
+</html>
